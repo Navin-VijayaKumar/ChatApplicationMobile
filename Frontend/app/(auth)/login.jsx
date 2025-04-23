@@ -20,7 +20,7 @@ const Login = () => {
     const [password, setPassword] = useState('')
 
     const handleLogin = () => {
-        axios.post('http://localhost:4000/login', {
+        axios.post('http://192.168.84.195:4000/login', {
             email,
             password
         }).then((res) => {

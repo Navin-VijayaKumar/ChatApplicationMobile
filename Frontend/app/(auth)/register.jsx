@@ -58,7 +58,7 @@ const Register = () => {
     const handleRegister = async () => {
         if (validateForm()) {
             try {
-                const response = await axios.post('http://localhost:4000/signup', {
+                const response = await axios.post('http://192.168.84.195:4000/signup', {
                     username: formData.username.trim(),
                     email: formData.email.trim(),
                     name: formData.name.trim(),
